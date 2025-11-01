@@ -170,8 +170,8 @@ const siteData = {
     ],
     social: {
       github: {
-        url: "https://github.com/SuDIS-ZJU",
-        text: "SuDIS-ZJU",
+        url: "https://github.com/dilab-zju",
+        text: "DI Lab-ZJU",
         icon: "fab fa-github",
       },
     },
