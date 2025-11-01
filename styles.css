@@ -53,14 +53,15 @@ img {
 
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 section {
     padding: 80px 0;
     position: relative;
+    overflow: hidden;
 }
 
 .section-header {
@@ -245,6 +246,8 @@ section {
     align-items: center;
     position: relative;
     overflow: hidden;
+    padding-left: 20px;
+        padding-right: 20px;
 }
 
 .hero::before {
@@ -266,17 +269,19 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 50px;
+    gap: 30px;
     position: relative;
     z-index: 1;
+    max-width: 1500px;
 }
 
 .hero-content {
     flex: 1;
+    max-width: 600px;
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 20px;
     color: var(--dark-color);
     font-weight: 800;
@@ -329,6 +334,14 @@ section {
     flex: 1;
     animation: float 3s ease-in-out infinite;
     position: relative;
+    max-width: 650px;
+        margin-right: 0;
+    }
+    
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
 }
 
 .image-badge {
@@ -381,6 +394,26 @@ section {
     }
 }
 
+/* 大屏幕优化 */
+@media (min-width: 1400px) {
+    .hero .container {
+        max-width: 1600px;
+    }
+
+    .hero-content {
+        max-width: 650px;
+    }
+
+    .hero-image {
+        max-width: 750px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .hero-image {
+        max-width: 600px;
+    }
+}
 /* 关于我们 */
 .about {
     background-color: white;
@@ -467,8 +500,8 @@ section {
 
 .stat-number {
     display: block;
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.8rem;
+        font-weight: 600;
     color: var(--primary-color);
     margin-bottom: 5px;
 }
@@ -1001,6 +1034,11 @@ section {
     .hero .container {
         flex-direction: column;
         text-align: center;
+        gap: 40px;
+        }
+        
+        .hero-content {
+            max-width: 100%;
     }
     
     .hero-content h1 {
@@ -1012,6 +1050,10 @@ section {
         transform: translateX(-50%);
     }
     
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                .hero-image {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    max-width: 100%;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    width: 100%;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                }
     .cta-buttons {
         justify-content: center;
     }
@@ -1023,7 +1065,7 @@ section {
     .data-snippet-container {
         margin-left: auto;
         margin-right: auto;
-        max-width: 90%;
+        max-width: 100%;
     }
     
     .floating-table {
@@ -1066,7 +1108,11 @@ section {
     }
     
     .hero-content h1 {
-        font-size: 2.3rem;
+        font-size: 2rem;
+        }
+        
+        .hero-image {
+            max-width: 100%;
     }
     
     .feature-card {
@@ -1087,6 +1133,8 @@ section {
     
     .data-snippet {
         font-size: 0.8rem;
+        white-space: normal;
+            word-break: break-word;
     }
     
     .contact-info-centered {
