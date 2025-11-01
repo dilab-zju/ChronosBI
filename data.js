@@ -111,7 +111,7 @@ const siteData = {
     title: "Research Demonstration",
     subtitle: "See CHRONOSBI in action",
     video: {
-      src: "v5.mp4",
+      src: "v6.mp4",
       type: "video/mp4",
     },
     description:
