@@ -111,7 +111,7 @@ const siteData = {
     title: "Research Demonstration",
     subtitle: "See CHRONOSBI in action",
     video: {
-      src: "v3.mp4",
+      src: "v5.mp4",
       type: "video/mp4",
     },
     description:
@@ -158,6 +158,10 @@ const siteData = {
       {
         icon: "fas fa-envelope",
         text: "cuilingxi.cs@zju.edu.cn",
+      },
+      {
+        icon: "fas fa-envelope",
+        text: "jianfeng.zhang@zju.edu.cn",
       },
       {
         icon: "fas fa-map-marker-alt",
